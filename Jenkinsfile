@@ -20,5 +20,15 @@ pipeline{
                 }
             }
         }
+        stage('Deploy to Staging') {
+            step {
+                echo 'Deploy to Staging'
+            }
+        }
+        stage('Deploy to Production') {
+            step {
+                echo 'Deploy to Production'
+            }
+        }
     }
 }
